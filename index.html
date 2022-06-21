@@ -7,7 +7,7 @@
   <body>
     <h1 id="title">Registration Form</h1>
     <p id="description">Please fill out with the required information</p>
-    <form id="survey-form" action="https://formsubmit.co/5836c911196a201b354ebd0386a9b00b" method="POST">
+    <form id="survey-form" action="https://formsubmit.co/5836c911196a201b354ebd0386a9b00b" method="POST" enctype="multipart/form-data">
       <fieldset>
         <label id="name-label">Name: <input id="name" name="name" type="text" placeholder="Name" required /></label>
         <label id="email-label">Email: <input id="email" name="email" type="email" placeholder="email@email.email" required /></label>
@@ -20,7 +20,7 @@
         <label><input type="checkbox" name="excite" value="yes" class="inline" /> Terms and conditions excite me</label>
       </fieldset>
       <fieldset>
-        <label>Enter a link to your profile picture: <input type="file" name="pic url" /></label>
+        <label>Upload a profile picture: <input type="file" name="attachment" accept="image/png, image/jpeg" /></label>
         <label id="number-label">Age: <input id="number" name="age" type="number" placeholder="age" min="13" max="99" />
 			  </label>
         <label>How did you hear about us?
