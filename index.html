@@ -9,22 +9,22 @@
     <p id="description">Please fill out with the required information</p>
     <form id="survey-form" action="https://formsubmit.co/5836c911196a201b354ebd0386a9b00b" method="POST">
       <fieldset>
-        <label id="name-label">Name: <input id="name" type="text" placeholder="Name" required /></label>
-        <label id="email-label">Email: <input id="email" type="email" placeholder="email@email.email" required /></label>
+        <label id="name-label">Name: <input id="name" name="name" type="text" placeholder="Name" required /></label>
+        <label id="email-label">Email: <input id="email" name="email" type="email" placeholder="email@email.email" required /></label>
         <label>Create a New Password: <input type="password" name="password" pattern="[a-z0-5]{8,}" required /></label>
       </fieldset>
       <fieldset>
         <label><input type="radio" name="account-type" value="personal" class="inline" /> Personal Account</label>
         <label><input type="radio" name="account-type" value="business" class="inline" /> Business Account</label>
         <label><input type="checkbox" name="terms" value="accept" class="inline" required /> I accept the <a href="terms.html" target="_blank">terms and conditions</a></label>
-        <label><input type="checkbox" name="terms" value="excite" class="inline" /> Terms and conditions excite me</label>
+        <label><input type="checkbox" name="excite" value="yes" class="inline" /> Terms and conditions excite me</label>
       </fieldset>
       <fieldset>
-        <label>Upload a profile picture: <input type="file" name="file" /></label>
-        <label id="number-label">Age: <input id="number" type="number" placeholder="age" min="13" max="99" />
+        <label>Enter a link to your profile picture: <input type="file" name="file" /></label>
+        <label id="number-label">Age: <input id="number" name="age" type="number" placeholder="age" min="13" max="99" />
 			  </label>
         <label>How did you hear about us?
-          <select id="dropdown">
+          <select id="dropdown" name="referrer">
             <option value="">(select one)</option>
             <option value="1">kuehns YouTube Channel</option>
             <option value="2">kuehns Forum</option>
